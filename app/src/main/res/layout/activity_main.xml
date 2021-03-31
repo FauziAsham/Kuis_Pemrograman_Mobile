@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="40dp"
+        android:text="Kuis Pemrograman Mobile"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Fauzi Asham Nasrul\nH071191020"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+
+    <TextView
+        android:id="@+id/biodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Biodata"
+        android:textAlignment="center"
+        android:textColor="#F44336"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:paddingBottom="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        android:onClick="bio"/>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/biodata">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#757474"
+            android:drawableBottom="@drawable/ic_baseline_home_24"
+            android:onClick="map"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#757474"
+            android:drawableBottom="@drawable/ic_baseline_message_24"
+            android:onClick="chat"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:onClick="exitApk"
+        android:backgroundTint="#757474"
+        app:icon="@drawable/ic_baseline_power_settings_new_24"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
